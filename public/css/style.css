@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+
+header .mauve form label {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+header .mauve img {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+header .mauve {
+  background-color: purple;
+  padding: 5px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
