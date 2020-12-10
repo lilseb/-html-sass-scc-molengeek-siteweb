@@ -2,6 +2,17 @@ body{
     margin: 0;
 }
 
+// header{
+//     .mauve{
+//         background-color: purple;
+//         padding: 5px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         position: relative;
+//     }
+// }
+
 header{
     .mauve{
         background-color: purple;
@@ -10,11 +21,6 @@ header{
         justify-content: center;
         align-items: center;
         position: relative;
-    }
-}
-
-header{
-    .mauve{
         img{
             height: 50px;
             width: auto;
@@ -39,6 +45,21 @@ header{
                 text-transform: uppercase;
             }
         }
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+
+        .coworking{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               
+            }
+               
     }
 }
 
