@@ -2,13 +2,14 @@ body {
   margin: 0;
 }
 
-
-header .mauve form label {
-  color: white;
+header .mauve {
+  background-color: purple;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-
-/*# sourceMappingURL=style.css.map */
-
 header .mauve img {
   height: 50px;
   width: auto;
@@ -16,12 +17,155 @@ header .mauve img {
   top: 0;
   left: 10px;
 }
-
-header .mauve {
-  background-color: purple;
-  padding: 5px;
-  justify-content: center;
+header .mauve form label {
+  color: white;
+}
+header .mauve form input {
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+}
+header .mauve form button {
+  background-color: lime;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
+header nav {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+header nav .coworking {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .nav-logo img {
+  width: 150px;
+  height: auto;
+}
+header nav .navigation {
+  flex: 4;
+  padding: 50px 20px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+header nav .navigation ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+header nav .navigation ul li {
+  list-style: none;
+  text-transform: uppercase;
+}
+header nav .navigation ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  max-width: max-content;
   position: relative;
 }
+header nav .navigation ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  height: 2px;
+  transition: 1s;
+  width: 100%;
+  transform: scaleX(0);
+}
+header nav .navigation ul li a:hover::before {
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  margin: 50px 15%;
+}
+
+section:first-of-type h1 {
+  font-size: 50px;
+  text-align: center;
+  /* font-weight: ; */
+  padding-bottom: 35px;
+  position: relative;
+}
+section:first-of-type h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 40px);
+  /* left: 50%; */
+  height: 3px;
+  width: 80px;
+  background-color: purple;
+}
+section:first-of-type ul li {
+  margin: 8px 0;
+}
+section:first-of-type ul li::marker {
+  color: purple;
+}
+
+section:last-of-type h2 {
+  font-size: 35px;
+}
+
+footer {
+  background-color: black;
+}
+footer .reseaux {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+}
+footer .reseaux ul {
+  display: flex;
+}
+footer .reseaux ul li {
+  list-style: none;
+  margin: 0 18px;
+  padding: 50px 0;
+}
+footer .reseaux ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .reseaux ul li a i {
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 10px;
+  margin-right: 10px;
+}
+footer .copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: center; */
+}
+footer .copy img {
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 50px;
+}
+footer .copy p {
+  padding: 30px;
+  font-size: 10px;
+  color: gray;
+}
+
+/*# sourceMappingURL=style.css.map */
